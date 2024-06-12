@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-left {
+    flex: 3;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-right {
+    flex: 2;
+    background-color: rgba(93, 93, 125, 0.16);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 80px;
+    color: #5D5D7D;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px; /* Corrigido o tamanho da fonte */
+    line-height: 48px;
+    color: #5D5D7D;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #a19999;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #a19999;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    opacity: .5;
+}
+
+a {
+    font-size: 28px;
+    margin: 20px 0 40px 30px;
+    line-height: 41px;
+    color: #5D5D7D;
+}
+
+a:nth-child(2) {
+    opacity: 0.4;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+header {
+    margin: none;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 52px;
+    width: auto;
+    margin: 58px 50px 0 50px;
+    text-align: center;
+}
+
+p {
+    margin: 15px 40px;
+    width: auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    
+    .container-right {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-left {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 38px;
+        margin: 20px 10px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 10px 20px;
+    }
+
+    button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    a {
+        font-size: 20px;
+        margin: 10px 0 20px 15px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container-left {
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 10px 5px;
+    }
+
+    p {
+        font-size: 10px;
+        line-height: 14px;
+        margin: 5px 10px;
+    }
+
+    button {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    a {
+        font-size: 18px;
+        margin: 5px 0 10px 10px;
+        line-height: 28px;
+    }
+}
